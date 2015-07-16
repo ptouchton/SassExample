@@ -11,7 +11,11 @@ body {
     font-size: $page-font-size;
 }
 
+.base-btn{
+    padding: 10px 10px 20px 20px;
+}
 .primary-btn{
+    @extend .base-btn;
     @include standard-button($primary-action-color);
 }
 
