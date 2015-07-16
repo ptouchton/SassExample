@@ -1,25 +1,43 @@
 body {
-  background-color: green;
-  font-size: 16px; }
-
-.base-btn, .primary-btn {
-  padding: 10px 10px 20px 20px; }
+    background-color: grey;
+    font-size: 16px;
+    font-weight: 700;
+}
 
 .primary-btn {
-  color: white;
-  width: 200px;
-  background-color: aqua; }
+    padding: 10px 10px 20px 20px;
+}
+
+.primary-btn {
+    color: white;
+    width: 200px;
+    background-color: aqua;
+}
 
 .secondary-btn {
-  color: white;
-  width: 200px;
-  background-color: green; }
+    clear: both;
+    color: white;
+    width: 200px;
+    background-color: green;
+}
 
 ol.contacts {
-  background-color: blue; }
-  ol.contacts li header {
-    font-size: 2em; }
-  ol.contacts li p {
-    font-size: .675em; }
+    background-color: blue;
+    box-shadow: 10px 5px 5px purple;
+}
+
+    ol.contacts li header {
+        font-size: 2em;
+    }
+
+    ol.contacts li p {
+        font-size: .675em;
+    }
+
+@media screen and (max-width: 480px) {
+    ol.contacts {
+        display: none;
+    }
+}
 
 /*# sourceMappingURL=Style.css.map */
