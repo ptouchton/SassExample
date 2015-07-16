@@ -12,4 +12,11 @@ body {
   width: 200px;
   background-color: green; }
 
+ol.contacts {
+  background-color: blue; }
+  ol.contacts li header {
+    font-size: 2em; }
+  ol.contacts li p {
+    font-size: .675em; }
+
 /*# sourceMappingURL=Style.css.map */

@@ -1,9 +1,4 @@
-﻿$col: green;
-$btn-text-color: white;
-$primary-action-color: aqua;
-$secondary-action-color: green;
-$btn-width: 200px;
-$page-font-size: 16px;
+﻿@import '_variables.scss';
 
 @mixin standard-button($bg-color){
     color: $btn-text-color;
@@ -23,4 +18,16 @@ body {
 .secondary-btn{
     @include standard-button($secondary-action-color);
 
+}
+
+ol.contacts{
+    background-color: blue;
+    li{
+        header{
+            font-size: 2em;
+        }
+        p{
+            font-size: .675em;
+        }
+    }
 }

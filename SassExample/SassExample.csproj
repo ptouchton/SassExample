@@ -64,6 +64,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_variables.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sass1.html" />
