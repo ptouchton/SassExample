@@ -1,0 +1,31 @@
+﻿@import '_variables.scss';
+
+@import '_mixins.scss';
+
+
+
+
+body {     
+    font-size: $base-font-size;
+}
+
+h1 {
+    color: $primary-brand-color;
+}
+
+.lead-text{
+    color: $primary-brand-color;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.primary-button {
+    @include standard-button($important-action-color);
+    @include border-radius-vendor(20px);
+}
+
+.secondary-button {
+    @include standard-button($secondary-action-color);
+    @include border-radius-vendor(20px);
+}
+

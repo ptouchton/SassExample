@@ -1,0 +1,11 @@
+﻿@import '_variables.scss';
+
+
+h1 {
+    color: $primary-brand-color;
+    
+    font: {
+        family: $brand-typeface;
+        size: $base-font-size;
+    }
+}

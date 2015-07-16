@@ -1,0 +1,37 @@
+﻿@mixin border-radius-vendor($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+/* This multi-line syntax for comments is output to .css file */
+.button{    
+    color: white;        
+    text-align: center;
+    font-size: 48pt;        
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    @include border-radius-vendor(10px);
+}
+
+/* 
+    This is the 
+    yes style.
+*/
+.yes{
+    background-color: #00ff00;
+}
+
+// This single line comment is not output to .css
+.no{
+    background-color: #ff0000;
+}
+
+// This single line comment is not output to .css
+.cancel{
+    background-color: #cec0b8;    
+}

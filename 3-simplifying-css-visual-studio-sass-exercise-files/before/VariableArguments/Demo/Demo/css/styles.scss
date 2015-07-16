@@ -1,0 +1,34 @@
+﻿$tile-size: 250px;
+
+
+@mixin shadow($shadows...){
+    box-shadow: $shadows;
+}
+
+
+body{
+    font-size: 20pt;
+}
+
+.tile{
+    width: $tile-size;
+    height: $tile-size;
+    margin: 50px;
+}
+
+#tile1{
+    @extend .tile;
+    background-color: red;
+
+    // pass a single value
+    @include shadow(10px 10px 5px black);
+}
+
+#tile2{
+    @extend .tile;
+    background-color: violet;
+
+    // pass a list of comma separated values
+    @include shadow(10px 10px 5px black, -10px -10px 10px 5px purple);
+}
+

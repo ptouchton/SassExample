@@ -1,0 +1,13 @@
+﻿
+
+$notDefined: blue;
+// This will create a Sass compilation error:
+
+body{
+    color: $notDefined;   
+}
+
+@debug "Sass is awesome!";
+
+@warn "Custom warning";
+

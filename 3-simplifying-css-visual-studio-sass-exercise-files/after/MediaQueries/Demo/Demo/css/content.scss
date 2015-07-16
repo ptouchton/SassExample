@@ -1,0 +1,17 @@
+﻿
+@mixin logged-in-only {
+  body.logged-in {
+    @content;    
+  }
+}
+
+
+@include logged-in-only {
+
+  // Here we're passing some content that the mixin can use
+      
+  .col1 {
+      background-color: pink;
+  }
+
+}

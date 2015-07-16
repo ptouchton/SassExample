@@ -1,0 +1,22 @@
+﻿
+
+@mixin set-font($size){
+    @if $size < 5px { 
+        font-size: 5px;
+        @warn Defaulting size to 5px
+    }
+    @else{
+        font-size: $size;
+    }
+}
+    
+
+
+body{
+    @include set-font(20pt);
+}
+
+h1{
+    @include set-font(0pt);
+}
+

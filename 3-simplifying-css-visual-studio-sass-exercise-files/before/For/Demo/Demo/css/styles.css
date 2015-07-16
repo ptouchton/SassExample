@@ -1,0 +1,19 @@
+.tile, #tile1, #tile2, #tile3, #tile4, #tile5 {
+  width: 100px;
+  height: 100px; }
+
+#tile1 {
+  background-color: #3333ff; }
+
+#tile2 {
+  background-color: #6666ff; }
+
+#tile3 {
+  background-color: #9999ff; }
+
+#tile4 {
+  background-color: #ccccff; }
+
+#tile5 {
+  background-color: white; }
+

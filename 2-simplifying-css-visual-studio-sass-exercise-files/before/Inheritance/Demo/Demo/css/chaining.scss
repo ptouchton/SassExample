@@ -1,0 +1,16 @@
+﻿
+.info{    
+    font-size: 18pt;
+}
+
+.error{    
+    @extend .info;
+    color: red;    
+}
+
+
+.fatal-error{    
+    @extend .error;
+    font-weight: bold;
+}
+

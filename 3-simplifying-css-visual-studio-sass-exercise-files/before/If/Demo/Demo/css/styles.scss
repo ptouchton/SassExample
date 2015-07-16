@@ -1,0 +1,16 @@
+﻿
+
+@mixin set-font($size){
+    font-size: $size;
+}
+    
+
+
+body{
+    @include set-font(20pt);
+}
+
+h1{
+    @include set-font(0pt);
+}
+

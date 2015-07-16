@@ -1,0 +1,19 @@
+#tile1, #tile2, #tile3, #tile4, #tile5 {
+  width: 100px;
+  height: 100px; }
+
+#tile1 {
+  background-color: blue; }
+
+#tile2 {
+  background-color: green; }
+
+#tile3 {
+  background-color: red; }
+
+#tile4 {
+  background-color: orange; }
+
+#tile5 {
+  background-color: purple; }
+

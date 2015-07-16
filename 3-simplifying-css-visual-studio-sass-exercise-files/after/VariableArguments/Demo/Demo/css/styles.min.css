@@ -1,0 +1,1 @@
+body{font-size:20pt}.tile,#tile1,#tile2{width:250px;height:250px;margin:50px}#tile1{background-color:red;box-shadow:10px 10px 5px black}#tile2{background-color:violet;box-shadow:10px 10px 5px black,-10px -10px 10px 5px purple}

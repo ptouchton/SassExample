@@ -1,0 +1,6 @@
+C:\Users\Paul\Documents\github\SassExample\SassExample\bin\SassExample.dll.config
+C:\Users\Paul\Documents\github\SassExample\SassExample\bin\SassExample.dll
+C:\Users\Paul\Documents\github\SassExample\SassExample\bin\SassExample.pdb
+C:\Users\Paul\Documents\github\SassExample\SassExample\obj\Debug\SassExample.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Documents\github\SassExample\SassExample\obj\Debug\SassExample.dll
+C:\Users\Paul\Documents\github\SassExample\SassExample\obj\Debug\SassExample.pdb

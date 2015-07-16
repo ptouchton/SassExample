@@ -1,0 +1,42 @@
+﻿
+$total-pixel-width: 1000px - 200px;
+
+$number-of-columns: 2 * 2 - 1;
+
+$col-width: $total-pixel-width / $number-of-columns;
+
+@debug total width $total-pixel-width;
+@debug number of columns $number-of-columns;
+@debug columns width $col-width;
+
+body{
+    font-size: 20pt;
+}
+
+.container{
+    width: $total-pixel-width;
+}
+
+.column{
+    width: $col-width;    
+    float: left;
+    //height: 400px / 2;
+}
+
+.col1{
+    @extend .column;
+    background-color: #ffa752;
+}
+
+.col2{
+    @extend .column;
+    background-color: #52ff90;
+}
+
+.col3{
+    @extend .column;
+    background-color: #fd52ff;
+}
+
+
+

@@ -1,0 +1,10 @@
+﻿
+
+
+// This will create a Sass compilation error:
+
+body{
+    color: $notDefined;   
+}
+
+

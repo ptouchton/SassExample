@@ -1,0 +1,38 @@
+﻿
+$tile-size: 100px;
+
+.tile{
+    width: $tile-size;
+    height: $tile-size;
+}
+
+// define a map variable of key/value pairs
+$team-colors: (
+    australia: #F7AD31,
+    england: #FFF,
+    sweden: #FFE700,
+    japan: #435AAD
+);
+
+
+@each $team, $color in $team-colors{
+
+    @debug key $team value $color;
+
+    .#{$team} {
+        @extend .tile;
+        background-color: $color;
+  }
+}
+
+@debug _____map related functions_____ ;
+
+@debug Sweden color is map-get($team-colors, sweden);
+
+@debug All keys map-keys($team-colors);
+
+@debug All values map-values($team-colors);
+
+@debug England exists map-has-key($team-colors, england);
+
+@debug Spain exists map-has-key($team-colors, spain);

@@ -1,0 +1,19 @@
+body {
+  font-size: 20pt; }
+
+.container {
+  width: 800px; }
+
+.column, .col1, .col2, .col3 {
+  width: 266.66667px;
+  float: left; }
+
+.col1 {
+  background-color: #ffa752; }
+
+.col2 {
+  background-color: #52ff90; }
+
+.col3 {
+  background-color: #fd52ff; }
+

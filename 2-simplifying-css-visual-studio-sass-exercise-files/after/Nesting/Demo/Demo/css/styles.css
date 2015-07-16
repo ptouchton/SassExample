@@ -1,0 +1,24 @@
+body {
+    font-size: 14pt;
+}
+
+ul.contacts {
+    background-color: green;
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul.contacts li article {
+        border: solid 5px;
+        background-color: #ff5e00;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+        ul.contacts li article header {
+            font-style: italic;
+        }
+
+        ul.contacts li article p {
+            color: white;
+        }

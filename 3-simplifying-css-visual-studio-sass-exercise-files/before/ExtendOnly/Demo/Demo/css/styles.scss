@@ -1,0 +1,24 @@
+﻿
+$tile-size: 100px;
+
+$tile-colors: blue, green, red, orange, purple;
+
+
+.tile{
+    width: $tile-size;
+    height: $tile-size;
+}
+
+
+
+@each $color in $tile-colors{
+
+    $i: index($tile-colors, $color);
+
+    @debug setting tile $i to $color;
+
+    #tile#{$i} {
+        @extend .tile;
+        background-color: $color;
+  }
+}

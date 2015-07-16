@@ -1,0 +1,1 @@
+body{font-size:20pt}article{width:300px;float:left;background-color:orange}aside{width:300px;float:left;background-color:pink}@media screen and (max-width:300px){aside{display:none;visibility:collapse}}@media screen and (max-width:500px){aside{background-color:green}}

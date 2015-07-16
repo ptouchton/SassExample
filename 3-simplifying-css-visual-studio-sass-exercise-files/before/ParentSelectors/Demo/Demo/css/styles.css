@@ -1,0 +1,11 @@
+body {
+  font-size: 20pt; }
+
+nav.related li a {
+  color: red; }
+  nav.related li a:hover {
+    color: orange;
+    font-size: 30pt; }
+  nav.related li a:visited {
+    color: purple; }
+

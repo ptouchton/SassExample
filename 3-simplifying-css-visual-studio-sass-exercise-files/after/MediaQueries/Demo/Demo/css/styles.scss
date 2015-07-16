@@ -1,0 +1,43 @@
+﻿$small-breakpoint: 300px;
+$medium-breakpoint: 500px;
+
+
+@mixin screen-media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+body{
+    font-size: 20pt;
+}
+
+
+article{
+    width: 300px;    
+    float: left;
+    background-color: orange;
+}
+
+
+aside{
+  width: 300px;
+  float: left;
+  background-color: pink;
+
+  @include screen-media($small-breakpoint){
+    display: none;
+    visibility:collapse;
+  }
+
+  @include screen-media($medium-breakpoint){
+    background-color: green;    
+  }
+}
+
+
+
+
+
+
+

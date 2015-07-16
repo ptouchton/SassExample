@@ -1,0 +1,32 @@
+﻿@mixin border-radius-vendor($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+.button{    
+    color: white;        
+    text-align: center;
+    font-size: 48pt;        
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    @include border-radius-vendor(10px);
+}
+
+.yes{
+    @extend .button;
+    background-color: #00ff00;
+}
+
+.no{
+    @extend .button;
+    background-color: #ff0000;
+}
+
+.cancel{
+    @extend .button;
+    background-color: #cec0b8;
+}

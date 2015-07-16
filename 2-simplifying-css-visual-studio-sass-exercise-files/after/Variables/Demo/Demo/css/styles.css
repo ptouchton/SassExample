@@ -1,0 +1,25 @@
+body {
+  font-size: 48pt; }
+
+h1 {
+  color: #ff6500; }
+
+.lead-text {
+  color: #ff6500;
+  font-weight: bold;
+  font-style: italic; }
+
+.primary-button {
+  color: white;
+  background-color: red;
+  font-size: 12pt;
+  width: 400px;
+  padding: 10px 30px 10px 20px; }
+
+.secondary-button {
+  color: white;
+  background-color: #f702b6;
+  font-size: 12pt;
+  width: 400px;
+  padding: 10px 30px 10px 20px; }
+

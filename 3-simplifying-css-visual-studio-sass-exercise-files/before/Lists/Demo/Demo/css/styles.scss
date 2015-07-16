@@ -1,0 +1,61 @@
+﻿$total-pixel-width: 800px;
+$number-of-columns: 3;
+$col-width: $total-pixel-width / $number-of-columns;
+
+
+
+// Defining Lists
+
+$space-delimited-list: 10px 20px 30px 40px;
+$another-space-delimited-list: 50px 60px 70px 80px;
+$comma-separated-list: #ffa752, #52ff90, #fd52ff;
+
+
+// List Functions
+
+@debug length is length($comma-separated-list);
+@debug 2nd item is nth($comma-separated-list, 2);
+
+// $joined: join($space-delimited-list, $another-space-delimited-list);
+// @debug joined list $joined;
+
+// $comma-separated-list: append($comma-separated-list, blue);
+// @debug appended list $comma-separated-list;
+
+//@debug index of blue index($comma-separated-list, blue);
+
+
+
+
+
+
+body{
+    font-size: 20pt;
+}
+
+.container{
+    width: $total-pixel-width;
+}
+
+.column{
+    width: $col-width;    
+    float: left;
+}
+
+.col1{
+    @extend .column;
+    background-color: nth($comma-separated-list, 1);
+}
+
+.col2{
+    @extend .column;
+    background-color: nth($comma-separated-list, 2);
+}
+
+.col3{
+    @extend .column;
+    background-color: nth($comma-separated-list, 3);
+}
+
+
+

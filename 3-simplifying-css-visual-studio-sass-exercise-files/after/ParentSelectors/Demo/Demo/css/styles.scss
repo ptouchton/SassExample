@@ -1,0 +1,23 @@
+﻿
+body{
+    font-size:20pt;
+}
+
+
+nav.related li a {
+    color: red;
+ 
+    &:hover {
+        color: orange;
+        font-size: 30pt;
+    }
+
+    &:visited {
+        color: purple;
+    }
+
+    body.logged-in & {
+        font-style: italic;
+    }
+}
+

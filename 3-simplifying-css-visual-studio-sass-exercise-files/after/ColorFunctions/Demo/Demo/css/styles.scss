@@ -1,0 +1,27 @@
+﻿// Complete list of color functions http://bit.ly/pssasscolors
+
+
+$root-color: #ff007d;
+
+$another-color: #ff6a00;
+
+body{
+    background-color: lighten($root-color, 45%);
+    font-size: 20pt;
+}
+
+h1{
+    color: adjust-hue($root-color, 70deg);
+}
+
+h2{
+    color: mix($root-color, $another-color);
+}
+
+.leadText{
+    color: saturate($root-color, 50%);
+}
+
+.detailText{
+    color: darken($root-color, 30%);
+}

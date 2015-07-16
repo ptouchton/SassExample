@@ -1,0 +1,23 @@
+﻿
+$tile-size: 100px;
+$root-color: blue;
+
+
+.tile{
+    width: $tile-size;
+    height: $tile-size;
+}
+
+@for $i from 1 through 5 {
+
+  @debug starting loop number $i;
+
+
+  // user #{} interpolation feature
+
+  #tile#{$i} {
+      @extend .tile;
+      background-color: lighten($root-color, $i*10);
+  } 
+   
+}

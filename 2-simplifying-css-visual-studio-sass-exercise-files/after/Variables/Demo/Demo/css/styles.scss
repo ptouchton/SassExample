@@ -1,0 +1,45 @@
+﻿
+$primary-brand-color: #ff6500;
+$important-action-color: #ff0000;
+$secondary-action-color: #f702b6;
+$button-text-color: white;
+
+$base-font-size: 48pt;
+$buttonFontSize: 12pt;
+
+$button-width: 400px;
+$button-padding: 10px 30px 10px 20px;
+
+
+
+
+body {     
+    font-size: $base-font-size;
+}
+
+h1 {
+    color: $primary-brand-color;
+}
+
+.lead-text{
+    color: $primary-brand-color;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.primary-button {
+    color: $button-text-color;
+    background-color: $important-action-color;
+    font-size: $buttonFontSize;
+    width: $button-width;
+    padding: $button-padding;
+}
+
+.secondary-button {
+    color: $button-text-color;
+    background-color: $secondary-action-color;
+    font-size: $buttonFontSize;
+    width: $button-width;
+    padding: $button-padding;
+}
+
