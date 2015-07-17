@@ -1,4 +1,5 @@
-﻿// Include gulp
+/// <vs SolutionOpened='watch' />
+// Include gulp
 var gulp = require('gulp');
 
 // Include Our Plugins
@@ -49,4 +50,4 @@ gulp.task('watch', function () {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'scripts', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'watch', 'minify-css']);
