@@ -24,6 +24,6 @@ ol.contacts {
     font-size: 2em; }
   ol.contacts li p {
     font-size: .675em; }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 480px) {
     ol.contacts {
       display: none; } }
