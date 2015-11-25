@@ -1,4 +1,4 @@
-/// <vs SolutionOpened='watch' />
+// <vs SolutionOpened='watch' />
 // Include gulp
 var gulp = require('gulp');
 
@@ -20,27 +20,21 @@ var sourceMaps = require("gulp-sourcemaps");
 
 // Compile Our Sass
 gulp.task('sass', function () {
-    return gulp.src('*.scss')
-        
+    return gulp.src('css/*.scss')
+        .pipe(sourceMaps.init())
         .pipe(sass({ sourcemap: true }))
-        .pipe(gulp.dest('.'));
+         // Load existing internal sourcemap
+        .pipe(minifyCss())
+        // Write final .map file
+        .pipe(sourceMaps.write('.'))
+        .pipe(gulp.dest('css'));
    
-});
-
-// Concatenate & Minify JS
-gulp.task('scripts', function () {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist'));
 });
 
 // Concatenate & Minify CSS
 // task
-gulp.task('minify-css', function () {
-    return gulp.src('*.css') // path to your file
+gulp.task('minify-css', ['sass'], function () {
+    return gulp.src('css/*.css') // path to your file
     // Load existing internal sourcemap
     .pipe(sourceMaps.init())
     .pipe(minifyCss())
@@ -52,9 +46,18 @@ gulp.task('minify-css', function () {
 // Watch Files For Changes
 gulp.task('watch', function () {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('*.scss', ['sass']);
-    gulp.watch('Style.css', ['minify-css']);
+    gulp.watch('css/*.scss', ['sass']);
+    //gulp.watch('Style.css', ['minify-css']);
 });
 
+// Concatenate & Minify JS
+gulp.task('scripts', function () {
+    return gulp.src('js/*.js')
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('all.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist'));
+});
 // Default Task
 gulp.task('default', ['sass', 'scripts', 'watch', 'minify-css']);

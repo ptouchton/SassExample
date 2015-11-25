@@ -60,14 +60,15 @@
     <Content Include="css\Style.css" />
     <Content Include="gulpfile.js" />
     <Content Include="package.json" />
-    <Content Include="Style.scss" />
+    <Content Include="css\Style.scss" />
+    <Content Include="css\Style.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="_variables.scss" />
+    <Content Include="css\_variables.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sass1.html" />
